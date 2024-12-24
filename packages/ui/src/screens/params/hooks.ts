@@ -7,7 +7,7 @@ import { DistributionParams, GovParams, MintParams, SlashingParams, StakingParam
 import type { ParamsState } from '@/screens/params/types';
 import { formatToken } from '@/utils/format_token';
 
-const { primaryTokenUnit } = chainConfig();
+const { votingPowerTokenUnit } = chainConfig();
 
 const initialState: ParamsState = {
   loading: true,
@@ -103,21 +103,23 @@ const formatGov = (data: ParamsQuery) => {
     const govParamsRaw = GovParams.fromJson(data?.govParams?.[0] ?? {});
     return {
       minDeposit: formatToken(
-        govParamsRaw.depositParams.minDeposit?.[0]?.amount ?? 0,
-        govParamsRaw.depositParams.minDeposit?.[0]?.denom ?? primaryTokenUnit
+        govParamsRaw.params.depositParams.minDeposit?.[0]?.amount ?? 0,
+        govParamsRaw.params.depositParams.minDeposit?.[0]?.denom ?? votingPowerTokenUnit
       ),
-      maxDepositPeriod: govParamsRaw.depositParams.maxDepositPeriod,
-      quorum: numeral(numeral(govParamsRaw.tallyParams.quorum).format('0.[00]')).value() ?? 0,
-      threshold: numeral(numeral(govParamsRaw.tallyParams.threshold).format('0.[00]')).value() ?? 0,
+      maxDepositPeriod: govParamsRaw.params.depositParams.maxDepositPeriod,
+      quorum:
+        numeral(numeral(govParamsRaw.params.tallyParams.quorum).format('0.[00]')).value() ?? 0,
+      threshold:
+        numeral(numeral(govParamsRaw.params.tallyParams.threshold).format('0.[00]')).value() ?? 0,
       vetoThreshold:
-        numeral(numeral(govParamsRaw.tallyParams.vetoThreshold).format('0.[00]')).value() ?? 0,
-      votingPeriod: govParamsRaw.votingParams.votingPeriod,
+        numeral(numeral(govParamsRaw.params.tallyParams.vetoThreshold).format('0.[00]')).value() ??
+        0,
+      votingPeriod: govParamsRaw.params.votingParams.votingPeriod,
     };
   }
 
   return null;
 };
-
 const formatParam = (data: ParamsQuery) => {
   const results: Partial<ParamsState> = {};
 

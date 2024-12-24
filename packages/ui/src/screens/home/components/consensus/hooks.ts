@@ -45,7 +45,7 @@ type NewRoundResult = {
 };
 
 const wsEndpoints = [
-  process.env.NEXT_PUBLIC_RPC_WEBSOCKET,
+  `${process.env.NEXT_PUBLIC_RPC_WEBSOCKET}/websocket`,
   endpoints.publicRpcWebsocket,
   endpoints.graphqlWebsocket,
   'ws://localhost:3000/websocket',

@@ -25,7 +25,7 @@ const NetworkList: FC<NetworkListProps> = ({ className, actionHeight }) => {
       >
         {theme === 'light' ? <BigDipperLogoRed /> : <BigDipperLogoWhite />}
       </div>
-      <Networks className={classes.content} />
+      {/* <Networks className={classes.content} /> */}
     </Box>
   );
 };

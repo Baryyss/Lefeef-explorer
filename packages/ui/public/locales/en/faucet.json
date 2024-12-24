@@ -1,0 +1,17 @@
+{
+  "faucet": "Faucet",
+  "process": "Process",
+  "transactionCompletedSuccessfully": "Transaction Completed Successfully",
+  "hash": "Hash",
+  "pleaseCreateNewAccount": "Please Create New Account",
+  "createAccount": "Create Account",
+  "scanForAddress": "Scan For Address",
+  "shareTo": "Share To",
+  "address": "Address",
+  "publicKey": "publicKey",
+  "accountSuccessfullyCreated": "Account Successfully Created",
+  "keepYourMnemonicInSafePlace": "Keep Your Mnemonic InSafe Place",
+  "createNewAccount": "Create New Account",
+  "reset": "Reset",
+  "accountMenomic": "Account Menomic"
+}
