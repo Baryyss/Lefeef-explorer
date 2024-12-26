@@ -37,7 +37,7 @@ export const useTestTransaction = () => {
             value: {
               fromAddress: process.env.NEXT_PUBLIC_FAUCET_ADDRESS_ONE ?? '',
               toAddress: receiver,
-              amount: [{ denom: 'ulefeef', amount: '5000000' }],
+              amount: [{ denom: 'ulefeef', amount: '1000000' }],
             },
           },
         ],
