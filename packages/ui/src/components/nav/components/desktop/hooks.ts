@@ -3,7 +3,7 @@ import { useScreenSize } from '@/hooks/use_screen_size';
 
 export const useDesktop = () => {
   const { isDesktop } = useScreenSize();
-  const [isMenu, setMenu] = useState(true);
+  const [isMenu, setMenu] = useState(false);
   const [isNetwork, setNetwork] = useState(false);
 
   useEffect(() => {

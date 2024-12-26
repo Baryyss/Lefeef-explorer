@@ -1,18 +1,16 @@
 import chainConfig from '@/chainConfig';
 import SocialMedia from '@/components/footer/components/social_media';
 import useStyles from '@/components/footer/styles';
-import { donateLink, footerLinks } from '@/components/footer/utils';
+import { footerLinks } from '@/components/footer/utils';
 import generalConfig from '@/generalConfig';
 import { readTheme } from '@/recoil/settings';
-import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import AppTrans from '@/components/AppTrans';
 import useAppTranslation from '@/hooks/useAppTranslation';
 import { FC } from 'react';
 import { useRecoilValue } from 'recoil';
-import FooterLogoLight from 'shared-utils/assets/big-dipper-red.svg';
-import FooterLogoDark from 'shared-utils/assets/big-dipper-white.svg';
+import FooterLefeefLogoLight from 'shared-utils/assets/logos/footer-lefeef-light.svg';
 
 const { title } = chainConfig();
 
@@ -34,9 +32,9 @@ const Footer: FC<{ className?: string }> = ({ className }) => {
         {/* ============================= */}
         <div className="footer__logo--container">
           {theme === 'light' ? (
-            <FooterLogoLight className="footer__logo" />
+            <FooterLefeefLogoLight className="footer__logo" />
           ) : (
-            <FooterLogoDark className="footer__logo" />
+            <FooterLefeefLogoLight className="footer__logo" />
           )}
           <p className="footer__slogan">{title}</p>
         </div>
@@ -60,14 +58,6 @@ const Footer: FC<{ className?: string }> = ({ className }) => {
           <div className="footer__social">
             <h3>{t('common:community')}</h3>
             <SocialMedia />
-            <div>
-              <p className="footer__donate--excerpt">{t('common:donateExcerpt')}</p>
-              <a href={donateLink.url} target="_blank" rel="noreferrer">
-                <Button className="footer__donate-button" variant="contained" color="primary">
-                  {t('common:donate')}
-                </Button>
-              </a>
-            </div>
           </div>
         </div>
       </div>

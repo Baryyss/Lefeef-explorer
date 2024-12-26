@@ -24,9 +24,7 @@ const ChainIcon = ({
   switch (chainName) {
     case 'lefeef':
       [iconDark, iconLight] =
-        type === 'icon'
-          ? [agoricIconLight, agoricIconLight]
-          : [lefeefLogoLight.src, lefeefLogoLight.src];
+        type === 'icon' ? [agoricIconLight, agoricIconLight] : [lefeefLogoLight, lefeefLogoLight];
       break;
     default:
       throw new Error(`chain ${chainName} not supported`);

@@ -3,8 +3,7 @@ import ClickAwayListener from '@mui/material/ClickAwayListener';
 import Drawer from '@mui/material/Drawer';
 import { FC } from 'react';
 import { useRecoilValue } from 'recoil';
-import BigDipperLogoRed from 'shared-utils/assets/big-dipper-red.svg';
-import BigDipperLogoWhite from 'shared-utils/assets/big-dipper-white.svg';
+import LefeefLogoLight from 'shared-utils/assets/logos/lefeef-light.svg';
 import { readTheme } from '@/recoil/settings';
 import TitleBar from '@/components/nav/components/title_bar';
 import MenuItems from '@/components/nav/components/menu_items';
@@ -51,14 +50,14 @@ const Desktop: FC<DesktopProps> = ({ className, title }) => {
           }}
         >
           {theme === 'light' ? (
-            <BigDipperLogoRed
+            <LefeefLogoLight
               className={classes.logo}
               onClick={toggleMenu}
               role="button"
               aria-label="toggle menu"
             />
           ) : (
-            <BigDipperLogoWhite
+            <LefeefLogoLight
               className={classes.logo}
               onClick={toggleMenu}
               role="button"

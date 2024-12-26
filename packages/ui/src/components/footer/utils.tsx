@@ -1,4 +1,3 @@
-const FORBOLE_URL = 'https://www.forbole.com';
 const BIG_DIPPER_URL = 'https://bigdipper.live';
 
 export const donateLink = {
@@ -7,49 +6,49 @@ export const donateLink = {
 };
 
 export const footerLinks = [
-  {
-    key: 'company',
-    links: [
-      {
-        key: 'forbole',
-        url: FORBOLE_URL,
-      },
-      {
-        key: 'stakeNow',
-        url: `${FORBOLE_URL}/stake-now`,
-      },
-      {
-        key: 'contact',
-        url: `${FORBOLE_URL}/contact`,
-      },
-      {
-        key: 'blog',
-        url: `${FORBOLE_URL}/blog`,
-      },
-    ],
-  },
+  // {
+  //   key: 'company',
+  //   links: [
+  //     {
+  //       key: 'forbole',
+  //       url: FORBOLE_URL,
+  //     },
+  //     {
+  //       key: 'stakeNow',
+  //       url: `${FORBOLE_URL}/stake-now`,
+  //     },
+  //     {
+  //       key: 'contact',
+  //       url: `${FORBOLE_URL}/contact`,
+  //     },
+  //     {
+  //       key: 'blog',
+  //       url: `${FORBOLE_URL}/blog`,
+  //     },
+  //   ],
+  // },
   {
     key: 'bigDipper',
     links: [
       {
         key: 'about',
-        url: `${BIG_DIPPER_URL}/#about`,
+        url: `https://lefeef.net/`,
       },
       {
         key: 'faq',
-        url: `${BIG_DIPPER_URL}/faq`,
+        url: ``,
       },
       {
         key: 'termsAndConditions',
-        url: `${BIG_DIPPER_URL}/terms-and-conditions`,
+        url: ``,
       },
       {
         key: 'privacyPolicy',
-        url: `${BIG_DIPPER_URL}/privacy-policy`,
+        url: ``,
       },
       {
         key: 'documentation',
-        url: 'https://docs.bigdipper.live/',
+        url: '',
       },
     ],
   },

@@ -9,21 +9,21 @@ export const socialMediaLinks: {
   {
     component: <TelegramIcon />,
     className: 'telegram',
-    url: 'https://t.me/forbole',
+    url: 'https://t.me/+AykW-ePjG9ZjNzE0',
   },
   {
     component: <LinkedinIcon />,
     className: 'linkedin',
-    url: 'https://www.linkedin.com/company/forbole',
+    url: 'http://www.linkedin.com/in/lefeef-d-ups-813393310',
   },
   {
     component: <TwitterIcon />,
     className: 'twitter',
-    url: 'https://twitter.com/bigdipperlive',
+    url: 'https://x.com/lefeef2024',
   },
   {
     component: <GithubIcon />,
     className: 'github',
-    url: 'https://github.com/forbole',
+    url: 'https://github.com/lefeef2024',
   },
 ];

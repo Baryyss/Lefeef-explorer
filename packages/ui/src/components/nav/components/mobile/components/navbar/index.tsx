@@ -6,8 +6,9 @@ import { HOME } from '@/utils/go_to_page';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Link from 'next/link';
 import { useRecoilValue } from 'recoil';
-import BigDipperLogoRed from 'shared-utils/assets/big-dipper-red.svg';
-import BigDipperLogoWhite from 'shared-utils/assets/big-dipper-white.svg';
+// import BigDipperLogoRed from 'shared-utils/assets/big-dipper-red.svg';
+// import BigDipperLogoWhite from 'shared-utils/assets/big-dipper-white.svg';
+import LefeefLogoLight from 'shared-utils/assets/logos/lefeef-light-phone.svg';
 
 const Navbar = (props: NavbarProps) => {
   const { classes, cx } = useStyles();
@@ -19,9 +20,9 @@ const Navbar = (props: NavbarProps) => {
     <div className={classes.root}>
       <Link shallow href={HOME} className={classes.a}>
         {theme === 'light' ? (
-          <BigDipperLogoRed className={classes.logo} />
+          <LefeefLogoLight className={classes.logo} />
         ) : (
-          <BigDipperLogoWhite className={classes.logo} />
+          <LefeefLogoLight className={classes.logo} />
         )}
       </Link>
       <div className={classes.actions}>
