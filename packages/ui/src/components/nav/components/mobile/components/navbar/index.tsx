@@ -3,7 +3,6 @@ import type { NavbarProps } from '@/components/nav/components/mobile/components/
 import useBigDipperNetworks from '@/hooks/useBigDipperNetworks';
 import { readTheme } from '@/recoil/settings';
 import { HOME } from '@/utils/go_to_page';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Link from 'next/link';
 import { useRecoilValue } from 'recoil';
 // import BigDipperLogoRed from 'shared-utils/assets/big-dipper-red.svg';
@@ -14,7 +13,7 @@ const Navbar = (props: NavbarProps) => {
   const { classes, cx } = useStyles();
   const theme = useRecoilValue(readTheme);
   const { selectedName } = useBigDipperNetworks();
-  const { isOpen, openNetwork, toggleNavMenus } = props;
+  const { isOpen, toggleNavMenus } = props;
 
   return (
     <div className={classes.root}>
@@ -31,13 +30,13 @@ const Navbar = (props: NavbarProps) => {
         {/* =================================== */}
         <div
           className={classes.network}
-          onClick={openNetwork}
+          // onClick={openNetwork}
           role="button"
           tabIndex={0}
           aria-label={selectedName}
         >
           <p className="text">{selectedName}</p>
-          <ExpandMoreIcon fontSize="small" />
+          {/* <ExpandMoreIcon fontSize="small" /> */}
         </div>
         {/* =================================== */}
         {/* Hamburger */}

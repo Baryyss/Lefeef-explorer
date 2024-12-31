@@ -8,11 +8,11 @@ import { TRANSACTION_DETAILS } from '@/utils/go_to_page';
 import Link from 'next/link';
 import { getMiddleEllipsis } from '@/utils/get_middle_ellipsis';
 import Box from '@/components/box';
-import { useStyles } from './styles';
-import { useTestTransaction } from './hooks';
 import LoadingButton from '@mui/lab/LoadingButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import OutlinedInput from '@mui/material/OutlinedInput';
+import { useStyles } from './styles';
+import { useTestTransaction } from './hooks';
 
 const TestTransaction: React.FC<ComponentDefault> = ({ className }) => {
   const { classes, theme } = useStyles();
