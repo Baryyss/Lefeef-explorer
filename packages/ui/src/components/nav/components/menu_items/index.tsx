@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -17,6 +18,10 @@ const MenuItems = () => {
   return (
     <List>
       {items?.map((x) => {
+        if (process.env.NEXT_PUBLIC_CHAIN_TYPE === 'mainnet' && x.key === 'faucet') {
+          return;
+        }
+
         let isActive = false;
         if (x.url === router?.asPath) {
           isActive = true;

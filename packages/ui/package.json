@@ -19,7 +19,7 @@
     "@emotion/react": "^11.11.0",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
-    "@keplr-wallet/types": "^0.11.59",
+    "@keplr-wallet/types": "^0.12.172",
     "@keplr-wallet/wc-client": "^0.11.59",
     "@mui/icons-material": "^5.11.16",
     "@mui/lab": "6.0.0-beta.21",

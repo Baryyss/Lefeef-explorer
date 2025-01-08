@@ -1,3 +1,4 @@
+/* eslint-disable turbo/no-undeclared-env-vars */
 import { DirectSecp256k1HdWallet, OfflineDirectSigner } from '@cosmjs/proto-signing';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
@@ -9,14 +10,10 @@ export const useTestTransaction = () => {
   const [success, setSuccess] = useState(false);
   const [txResult, setTxResult] = useState<any>();
 
-  const getFaucetOneSignerFromMnemonic = async (): Promise<OfflineDirectSigner> => {
-    return DirectSecp256k1HdWallet.fromMnemonic(
-      process.env.NEXT_PUBLIC_MENEMONIC_FAUCET_ONE ?? '',
-      {
-        prefix: 'lefeef',
-      }
-    );
-  };
+  const getFaucetOneSignerFromMnemonic = async (): Promise<OfflineDirectSigner> =>
+    DirectSecp256k1HdWallet.fromMnemonic(process.env.NEXT_PUBLIC_MENEMONIC_FAUCET_ONE ?? '', {
+      prefix: 'lefeef',
+    });
 
   const processTransaction = async (receiver: string) => {
     try {
@@ -49,12 +46,14 @@ export const useTestTransaction = () => {
         }
       );
       setTxResult(result);
-      if (result.code == 0) {
+      if (result.code === 0) {
         setSuccess(true);
       } else {
         setSuccess(false);
       }
-    } catch (error) {
+    } catch (error: any) {
+      setSuccess(false);
+      setTxResult(error?.message);
       console.error(error);
     } finally {
       setLoading(false);

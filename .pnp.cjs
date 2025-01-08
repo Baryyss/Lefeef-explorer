@@ -5777,6 +5777,27 @@ const RAW_RUNTIME_STATE =
           ["long", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:0.12.172", {\
+        "packageLocation": "./.yarn/cache/@keplr-wallet-types-npm-0.12.172-a6666e3b6a-f22cef282a.zip/node_modules/@keplr-wallet/types/",\
+        "packageDependencies": [\
+          ["@keplr-wallet/types", "npm:0.12.172"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:0.12.172", {\
+        "packageLocation": "./.yarn/__virtual__/@keplr-wallet-types-virtual-a9109b253c/0/cache/@keplr-wallet-types-npm-0.12.172-a6666e3b6a-f22cef282a.zip/node_modules/@keplr-wallet/types/",\
+        "packageDependencies": [\
+          ["@keplr-wallet/types", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:0.12.172"],\
+          ["@types/starknet", null],\
+          ["long", "npm:4.0.0"],\
+          ["starknet", null]\
+        ],\
+        "packagePeers": [\
+          "@types/starknet",\
+          "starknet"\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@keplr-wallet/wc-client", [\
@@ -20965,7 +20986,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-tools/mock", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:8.7.20"],\
           ["@graphql-tools/schema", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:9.0.19"],\
           ["@jest/globals", "npm:29.5.0"],\
-          ["@keplr-wallet/types", "npm:0.11.59"],\
+          ["@keplr-wallet/types", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:0.12.172"],\
           ["@keplr-wallet/wc-client", "npm:0.11.59"],\
           ["@mui/icons-material", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:5.11.16"],\
           ["@mui/lab", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:6.0.0-beta.21"],\

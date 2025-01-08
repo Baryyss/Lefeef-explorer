@@ -3605,6 +3605,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@keplr-wallet/types@npm:^0.12.172":
+  version: 0.12.172
+  resolution: "@keplr-wallet/types@npm:0.12.172"
+  dependencies:
+    long: "npm:^4.0.0"
+  peerDependencies:
+    starknet: ^6
+  checksum: 10/f22cef282a657b3b2d9e8f867a6e7ff863c8f696e5b5aec331ee0cdef23efed6c4638316fd40b738df091a91b01e7fcf63032e3f60105c65013d31252732b646
+  languageName: node
+  linkType: hard
+
 "@keplr-wallet/wc-client@npm:^0.11.59":
   version: 0.11.59
   resolution: "@keplr-wallet/wc-client@npm:0.11.59"
@@ -15485,7 +15496,7 @@ __metadata:
     "@graphql-tools/mock": "npm:^8.7.20"
     "@graphql-tools/schema": "npm:^9.0.19"
     "@jest/globals": "npm:^29.5.0"
-    "@keplr-wallet/types": "npm:^0.11.59"
+    "@keplr-wallet/types": "npm:^0.12.172"
     "@keplr-wallet/wc-client": "npm:^0.11.59"
     "@mui/icons-material": "npm:^5.11.16"
     "@mui/lab": "npm:6.0.0-beta.21"
