@@ -209,29 +209,29 @@
   "keplr": "{\"chainId\":\"desmos-mainnet\",\"chainName\":\"Desmos\",\"chainSymbolImageUrl\":\"https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/desmos-mainnet/chain.png\",\"rpc\":\"https://rpc.mainnet.desmos.network\",\"rest\":\"https://api.mainnet.desmos.network\",\"nodeProvider\":{\"name\":\"Forbole\",\"email\":\"info@forbole.com\",\"website\":\"https://www.forbole.com\"},\"bip44\":{\"coinType\":852},\"bech32Config\":{\"bech32PrefixAccAddr\":\"desmos\",\"bech32PrefixAccPub\":\"desmospub\",\"bech32PrefixValAddr\":\"desmosvaloper\",\"bech32PrefixValPub\":\"desmosvaloperpub\",\"bech32PrefixConsAddr\":\"desmosvalcons\",\"bech32PrefixConsPub\":\"desmosvalconspub\"},\"currencies\":[{\"coinDenom\":\"DSM\",\"coinMinimalDenom\":\"udsm\",\"coinDecimals\":6,\"coinGeckoId\":\"desmos\"}],\"feeCurrencies\":[{\"coinDenom\":\"DSM\",\"coinMinimalDenom\":\"udsm\",\"coinDecimals\":6,\"coinGeckoId\":\"desmos\",\"gasPriceStep\":{\"low\":0.01,\"average\":0.03,\"high\":0.05}}],\"stakeCurrency\":{\"coinDenom\":\"DSM\",\"coinMinimalDenom\":\"udsm\",\"coinDecimals\":6,\"coinGeckoId\":\"desmos\"},\"features\":[]}",
   "chains": [
     {
-      "network": "desmos-mainnet",
+      "network": "Lefeef Mainnet",
       "chainType": "Mainnet",
       "genesis": {
-        "time": "2021-08-31T16:15:00",
-        "height": 1
+        "time": "2022-10-24T08:00:00",
+        "height": 7942286
       },
       "prefix": {
-        "consensus": "desmosvalcons",
-        "validator": "desmosvaloper",
-        "account": "desmos"
+        "consensus": "lefeefvalcons",
+        "validator": "lefeefvaloper",
+        "account": "lefeef"
       },
-      "primaryTokenUnit": "udsm",
-      "votingPowerTokenUnit": "udsm",
+      "primaryTokenUnit": "ulefeef",
+      "votingPowerTokenUnit": "ulefeef",
       "tokenUnits": {
-        "udsm": {
-          "display": "dsm",
+        "ulefeef": {
+          "display": "lefeef",
           "exponent": 6
         }
       },
       "endpoints": {
-        "graphql": "https://gql.desmos.forbole.com/v1/graphql",
-        "graphqlWebsocket": "wss://gql.desmos.forbole.com/v1/graphql",
-        "publicRpcWebsocket": "wss://rpc.desmos.forbole.com/websocket"
+        "graphql": "http://85.209.95.59:8080/v1/graphql",
+        "graphqlWebsocket": "ws://85.209.95.59:8080/v1/graphql",
+        "publicRpcWebsocket": "ws://85.209.95.59:26657/websocket"
       },
       "marketing": {
         "matomoURL": "https://analytics.bigdipper.live",
