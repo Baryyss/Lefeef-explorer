@@ -46,10 +46,10 @@ const CreateAccount: React.FC<{
     accountAddress: '',
     accountName: '',
     accountNumber: '',
-    accountBalanceGGEZ: '0',
-    accountBalanceGGEZOne: '0',
-    accountGGEZDenom: '',
-    accountGGEZOneDenom: '',
+    accountBalanceLefeef: '0',
+    accountBalanceLefeefOne: '0',
+    accountLefeefDenom: '',
+    accountLefeefOneDenom: '',
     accountPublicKey: '',
   };
   const { location } = useWindowOrigin();
@@ -90,7 +90,7 @@ const CreateAccount: React.FC<{
   }, [createAccountData]);
 
   const url = `${location}/accounts/${address}`;
-  const hashTags = ['ggezexplorer', 'ggez'];
+  const hashTags = ['lefeefexplorer', 'lefeef'];
 
   const reset = () => {
     setAccount(data);

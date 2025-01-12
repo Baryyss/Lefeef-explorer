@@ -6,7 +6,7 @@
   "pl": "Polski",
   "bigDipper": "Lefeef Explorer",
   "forbole": "Forbole",
-  "copyright": "<0>License</0> © Forbole",
+  "copyright": "<0>License</0> © LEFEEF",
   "donate": "Donate",
   "about": "About",
   "faq": "FAQ",
@@ -92,5 +92,7 @@
   "walletTitle": "Connected wallets",
   "searchType": "Search type",
   "selectAll": "Select All",
-  "filter": "Filter"
+  "filter": "Filter",
+  "mainnet": "Mainnet",
+  "testnet":"Testnet"
 }

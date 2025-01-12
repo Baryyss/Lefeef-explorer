@@ -131,6 +131,7 @@ export interface PaletteSettings {
 export interface ChainConfig extends ChainSettings {
   chainName: string;
   title: string;
+  icon: string;
   extra: {
     profile: boolean;
     graphqlWs: boolean;

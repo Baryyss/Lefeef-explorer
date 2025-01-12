@@ -1,12 +1,13 @@
 {
   "chainName": "lefeef",
-  "title": "Lefeef Testnet Explorer",
+  "title": "Lefeef Explorer",
+  "icon": "https://lefeef.net/favicon.ico",
   "extra": {
     "votingPowerExponent": 6,
     "profile": true,
     "graphqlWs": false
   },
-  "previewImage": "https://s3.bigdipper.live/desmos.png",
+  "previewImage": "https://lefeef.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flefeef_logo-svg-ai.ad73373d.png&w=750&q=75",
   "themes": {
     "default": "light",
     "themeList": [
@@ -17,7 +18,7 @@
     ],
     "dark": {
       "primary": {
-        "main": "#FF835B",
+        "main": "#6439FF",
         "contrastText": "#FFFFFF"
       },
       "background": {
@@ -45,19 +46,19 @@
           "highlight": "#4092CD"
         },
         "primaryData": {
-          "one": "#F87255",
-          "two": "#FA9147",
-          "three": "#43BE7C",
-          "four": "#43A1BE"
+          "one": "#6439FF",
+          "two": "#4F75FF",
+          "three": "#00CCDD",
+          "four": "#7CF5FF"
         },
         "results": {
           "pass": "#1EC490",
           "fail": "#FD3B4C"
         },
         "tokenomics": {
-          "one": "#43A1BE",
-          "two": "#E3BB55",
-          "three": "#20D292"
+          "one": "#4F75FF",
+          "two": "#00CCDD",
+          "three": "#7CF5FF"
         },
         "condition": {
           "zero": "#E6E6E6",
@@ -112,7 +113,7 @@
     },
     "light": {
       "primary": {
-        "main": "#FF835B",
+        "main": "#6439FF",
         "contrastText": "#FFFFFF"
       },
       "background": {
@@ -140,19 +141,19 @@
           "highlight": "#4092CD"
         },
         "primaryData": {
-          "one": "#F87255",
-          "two": "#FA9147",
-          "three": "#20D494",
-          "four": "#2FB6E0"
+          "one": "#6439FF",
+          "two": "#4F75FF",
+          "three": "#00CCDD",
+          "four": "#7CF5FF"
         },
         "results": {
           "pass": "#1EC490",
           "fail": "#FD3B4C"
         },
         "tokenomics": {
-          "one": "#2FB6E0",
-          "two": "#FFC93D",
-          "three": "#20D494"
+          "one": "#4F75FF",
+          "two": "#00CCDD",
+          "three": "#7CF5FF"
         },
         "condition": {
           "zero": "#E6E6E6",

@@ -1,20 +1,40 @@
+/* eslint-disable jsx-a11y/interactive-supports-focus */
 import useStyles from '@/components/nav/components/mobile/components/navbar/styles';
 import type { NavbarProps } from '@/components/nav/components/mobile/components/navbar/types';
-import useBigDipperNetworks from '@/hooks/useBigDipperNetworks';
+import useAppTranslation from '@/hooks/useAppTranslation';
 import { readTheme } from '@/recoil/settings';
 import { HOME } from '@/utils/go_to_page';
 import Link from 'next/link';
+import { useState } from 'react';
 import { useRecoilValue } from 'recoil';
-// import BigDipperLogoRed from 'shared-utils/assets/big-dipper-red.svg';
-// import BigDipperLogoWhite from 'shared-utils/assets/big-dipper-white.svg';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Typography from '@mui/material/Typography';
+import { Menu, MenuItem } from '@mui/material';
 import LefeefLogoLight from 'shared-utils/assets/logos/lefeef-light-phone.svg';
 
 const Navbar = (props: NavbarProps) => {
   const { classes, cx } = useStyles();
   const theme = useRecoilValue(readTheme);
-  const { selectedName } = useBigDipperNetworks();
   const { isOpen, toggleNavMenus } = props;
-
+  const { t } = useAppTranslation('common');
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+  const menuItems =
+    process.env.NEXT_PUBLIC_CHAIN_TYPE === 'testnet'
+      ? [
+          { label: t('testnet'), url: 'https://testnet.lefeef.network' },
+          { label: t('mainnet'), url: 'https://mainnet.lefeef.network' },
+        ]
+      : [
+          { label: t('mainnet'), url: 'https://mainnet.lefeef.network' },
+          { label: t('testnet'), url: 'https://testnet.lefeef.network' },
+        ];
   return (
     <div className={classes.root}>
       <Link shallow href={HOME} className={classes.a}>
@@ -30,14 +50,40 @@ const Navbar = (props: NavbarProps) => {
         {/* =================================== */}
         <div
           className={classes.network}
-          // onClick={openNetwork}
+          aria-controls={open ? 'basic-menu' : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? 'true' : undefined}
+          onClick={handleClick}
           role="button"
-          tabIndex={0}
-          aria-label={selectedName}
         >
-          <p className="text">{selectedName}</p>
-          {/* <ExpandMoreIcon fontSize="small" /> */}
+          <Typography variant="body1">
+            {process.env.NEXT_PUBLIC_CHAIN_TYPE === 'testnet' ? t('testnet') : t('mainnet')}
+          </Typography>
+          <ExpandMoreIcon fontSize="small" />
         </div>
+        <Menu
+          id="basic-menu"
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          MenuListProps={{
+            'aria-labelledby': 'basic-button',
+          }}
+          keepMounted
+          onClick={handleClose}
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+          PaperProps={{
+            style: {
+              minWidth: 50,
+            },
+          }}
+        >
+          {menuItems.map((item) => (
+            <Link key={item.url} href={item.url} passHref>
+              <MenuItem onClick={handleClose}>{item.label}</MenuItem>
+            </Link>
+          ))}
+        </Menu>
         {/* =================================== */}
         {/* Hamburger */}
         {/* =================================== */}

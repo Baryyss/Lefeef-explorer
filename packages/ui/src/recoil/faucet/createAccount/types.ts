@@ -1,8 +1,8 @@
 export type AtomCreateAccountState = {
-  accountBalanceGGEZ: string | null;
-  accountBalanceGGEZOne: string | null;
-  accountGGEZDenom: string | null;
-  accountGGEZOneDenom: string | null;
+  accountBalanceLefeef: string | null;
+  accountBalanceLefeefOne: string | null;
+  accountLefeefDenom: string | null;
+  accountLefeefOneDenom: string | null;
   accountMnemonic: string | null;
   accountAddress: string | null;
   accountName: string | null;

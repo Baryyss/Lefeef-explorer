@@ -42,10 +42,10 @@ export const useGenerateMnemonicRecoil = () => {
       accountAddress: address,
       accountName: state.accountName ? state.accountName : createAccountData.accountName,
       accountNumber: state.accountNumber ? state.accountNumber : createAccountData.accountNumber,
-      accountBalanceGGEZ: '0',
-      accountBalanceGGEZOne: '0',
-      accountGGEZDenom: chainConfig.primaryTokenUnit,
-      accountGGEZOneDenom: chainConfig.votingPowerTokenUnit,
+      accountBalanceLefeef: '0',
+      accountBalanceLefeefOne: '0',
+      accountLefeefDenom: chainConfig.primaryTokenUnit,
+      accountLefeefOneDenom: chainConfig.votingPowerTokenUnit,
       accountPublicKey: encodedPublicKey,
     };
     wallet && address ? setCreateAccountData(data) : null;
@@ -59,18 +59,18 @@ export const useGenerateMnemonicRecoil = () => {
         createAccountData.accountAddress
       );
 
-      const balanceGGEZ: Coin = balancesFacuetOne[0];
-      const balanceGGEZOne: Coin = balancesFacuetOne[1];
+      const balanceLefeef: Coin = balancesFacuetOne[0];
+      const balanceLefeefOne: Coin = balancesFacuetOne[1];
 
       const data = {
         accountMnemonic: createAccountData.accountMnemonic,
         accountAddress: createAccountData.accountAddress,
         accountName: createAccountData.accountName,
         accountNumber: createAccountData.accountNumber,
-        accountBalanceGGEZ: balanceGGEZ ? balanceGGEZ.amount : '0',
-        accountBalanceGGEZOne: balanceGGEZOne ? balanceGGEZOne.amount : '0',
-        accountGGEZDenom: chainConfig.primaryTokenUnit,
-        accountGGEZOneDenom: chainConfig.votingPowerTokenUnit,
+        accountBalanceLefeef: balanceLefeef ? balanceLefeef.amount : '0',
+        accountBalanceLefeefOne: balanceLefeefOne ? balanceLefeefOne.amount : '0',
+        accountLefeefDenom: chainConfig.primaryTokenUnit,
+        accountLefeefOneDenom: chainConfig.votingPowerTokenUnit,
         accountPublicKey: createAccountData.accountPublicKey,
       };
 

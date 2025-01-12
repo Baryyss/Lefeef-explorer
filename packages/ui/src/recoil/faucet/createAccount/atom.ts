@@ -1,10 +1,10 @@
 import { atom } from 'recoil';
 
 type AtomCreateAccountState = {
-  accountBalanceGGEZ: string | null;
-  accountBalanceGGEZOne: string | null;
-  accountGGEZDenom: string | null;
-  accountGGEZOneDenom: string | null;
+  accountBalanceLefeef: string | null;
+  accountBalanceLefeefOne: string | null;
+  accountLefeefDenom: string | null;
+  accountLefeefOneDenom: string | null;
   accountMnemonic: string | null;
   accountAddress: string | null;
   accountName: string | null;
@@ -13,10 +13,10 @@ type AtomCreateAccountState = {
 };
 
 const initialState: AtomCreateAccountState = {
-  accountBalanceGGEZ: '',
-  accountBalanceGGEZOne: '',
-  accountGGEZDenom: '',
-  accountGGEZOneDenom: '',
+  accountBalanceLefeef: '',
+  accountBalanceLefeefOne: '',
+  accountLefeefDenom: '',
+  accountLefeefOneDenom: '',
   accountMnemonic: '',
   accountAddress: '',
   accountName: '',
